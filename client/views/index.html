@@ -1,0 +1,40 @@
+<section class="latest-blog">
+    <div class="container" ng-controller="mainController" class="main-content">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Latest From The <strong>Blog</strong></h2>
+          <p class="subtitle se-color small-size uppercase text-center">company news and events</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" ng-repeat="post in allData">
+          <article class="latest-post item-post">
+            <div class="post-thumb">
+              <a href="/post-details/{{post._id}}"><img width="503" height="193"style="object-fit: contain;" src="../uploads/{{post.Image}}" alt="">
+              </a>
+            </div>
+            <div class="post-meta">
+              <div class="avatar-date">
+                <p><span>23</span>
+                </p>
+                <p>apr</p>
+                <div class="avatar-comment"> 
+                  <p><i class="fa fa-comment-o"></i> 10</p>
+                </div>
+              </div>
+              <div class="meta-right">
+                <h4><a href="/post-details/{{post._id}}">{{post.PostTitle}}</a></h4>
+                <p>{{post.Content}}</p> <span><i class="fa fa-tag"></i> tag: <strong>power,factory</strong></span> </div>
+                <form method="post" action="/deletepost">
+                  <input type="hidden" value="{{post._id}}" ng-model="postId" name="PostId" />
+                  <input type="button" value="Delete" ng-click="deletePost(post._id)" class="btn btn-danger" />
+                </form>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-12">
+          <div class="text-center more-blog"> <a href="blog-general.html" class="btn btn-color">READ THE BLOG</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>

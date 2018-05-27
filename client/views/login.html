@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from best100news.com/baakotheme/login-fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2017 00:45:06 GMT -->
+<head>
+     <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Baako Login Form</title>
+    <meta name="keywords" content="HTML5 Template , Responsive , html5 , css3" />
+    <meta name="description" content="Baako - Responsive HTML5 CSS3 Template">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../content/home/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../content/home/css/components/login-full.css">
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" type="image/x-icon" href="../content/home/images/favicon.ico" />
+</head>
+
+<body>
+    <!-- login start -->
+    <div class="pen-title">
+        <h1>Login Form</h1></span>
+    </div>
+    <div class="container">
+        <div class="card"></div>
+        <div class="card">
+            <h1 class="title">Login</h1>
+            <!-- <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+            <% } %> -->
+            <form method="post" action="/login">
+                <div class="input-container">
+                    <input type="text" name="username" required="required" />
+                    <label for="#{label}">Username</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" required="required" />
+                    <label for="#{label}">Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                    <button><span>Login</span></button>
+                    <input type="button" class="toggle" value="Register">
+                </div>
+
+            </form>
+        </div>
+        <div class="card alt">
+            <div class="toggle"></div>
+            <h1 class="title">Register
+              <div class="close"></div>
+            </h1>
+            <form method="post" action="/register">
+                <div class="input-container">
+                    <input type="text" name="username" id="#{label}" required="required" />
+                    <label for="#{label}">Username</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" id="#{label}" required="required" />
+                    <label for="#{label}">Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="confirmpassword" id="#{label}" required="required" />
+                    <label for="#{label}">Repeat Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                    <button><span>Register</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src='../content/home/js/jquery.min.js'></script>
+    <!-- login js -->
+    <script src="../content/home/js/login.js"></script>
+</body>
+
+
+<!-- Mirrored from best100news.com/baakotheme/login-fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2017 00:45:06 GMT -->
+</html>

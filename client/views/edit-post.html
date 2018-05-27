@@ -1,0 +1,52 @@
+<div ng-controller="editController" class="main-content">
+    <div class="page-content">
+        <!-- container start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-primary">
+                        <div class="content-inner">
+                            <!-- login section start -->
+                            <section>
+                                <div class="container">
+                                    <div class="col-md-6 col-md-offset-3 padding">
+                                        <div class="login">
+                                            <h4 class="h4-color">NEW BLOG POST</h4>
+                                            <form method="post" action="/editpost" class="comment-form contact-form" id="ajax-form">
+                                                <!-- <div ng-repeat="msg in messages track by $index">{{msg.msg}}</div> -->
+                                                <input type="hidden" name="PostId" value="{{postData._id}}" />
+                                                <label>Post Title *</label>
+                                                <p class="comment-form-author">
+                                                    <input id="name" name="PostTitle" value="{{postData.PostTitle}}" type="text" value="" placeholder="">
+                                                    <span class="error" id="err-name">please enter name</span>
+                                                </p>
+                                                <input type="file" name="Image" />
+                                                <label>Content *</label>
+                                                <p class="comment-form-email">
+                                                    <textarea name="Content" id="" cols="30" rows="10">{{postData.Content}}</textarea>
+                                                    <span class="error" id="err-email">please enter e-mail</span>
+                                                    <span class="error" id="err-emailvld">e-mail is not a valid format</span>
+                                                </p>
+                                                <!-- <div class="text-left">
+                                                    <input name="email" type="checkbox">
+                                                     <label>Rembember me</label>
+                                                </div> -->
+                                                <div class="text-right">
+                                                    <button class="login-btn btn">Edit Post</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- End: login section -->
+                        </div>
+                    </div>                            
+                </div>
+            </div>
+        </div>
+        <!-- End: container -->
+    </div>
+</div>

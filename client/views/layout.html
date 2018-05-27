@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="en" ng-app="myApp">
+<!--<![endif]-->
+
+
+<!-- Mirrored from best100news.com/baakotheme/shortcodes-timeline.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2017 00:45:18 GMT -->
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <base href="/">
+    <title update-title></title>
+    <meta name="keywords" content="HTML5 Template , Responsive , html5 , css3" />
+    <meta name="description" content="Baako - Responsive HTML5 CSS3 Template">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <!-- loadingbar -->
+    <link href='../content/loader/loading-bar.css' rel='stylesheet' />
+
+    <!-- Bootstrap-3.3.7 fremwork css -->
+    <link rel="stylesheet" href="../content/home/css/bootstrap.min.css" />
+    <!-- font Awesome-4.6.3 css -->
+    <link rel="stylesheet" href="../content/home/css/font-awesome.min.css" />
+    <!-- Carousel slider css -->
+    <link rel="stylesheet" href="../content/home/css/owl.carousel.css" />
+    <!-- Main style css -->
+    <link rel="stylesheet" href="../content/home/style.css" />
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" type="image/x-icon" href="../content/home/images/favicon.ico" />
+
+</head>
+
+<body ng-controller="layoutController">
+    <!-- page loader start -->
+    <div class="images-preloader">
+        <div class="preloader4"></div>
+    </div>
+    <!-- page loader end -->
+    <div class="wrapper">
+        <!-- header start -->
+        <header class="site-header header11">
+            <!-- Top search -->
+            <div class="top-search">
+                <div class="container">
+                    <div class="row">
+                        <input type="text" class="" name="x" placeholder="Type & Hit Enter" autofocus="autofocus">
+                    </div>
+                    <a href="#" id="search-delete"><i class="fa fa-times"></i></a>
+                </div>
+            </div>
+            <!-- sub bar start -->
+            <div class="sub-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <!-- Contacts start -->
+                            <div class="contacts">
+                                <p><i class="fa fa-phone"></i> 1-234-567-890 </p>
+                                <p><i class="fa fa-envelope-o"></i><a href="#">support@baakothemes.com</a></p>
+                            </div>
+                            <!-- Contacts start -->
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <!-- Social media start -->
+                            <div class="social-media">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </div>
+                            <!-- Social media end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sub bar End: -->
+            <!-- main bar start -->
+            <div class="main-bar fixed-color" id="main-bar">
+                <div class="container">
+                    <h1 class="logo">
+                        <a href="home.html">
+                            <img src="../content/home/images/logo.html" alt="">
+                        </a>
+                    </h1>
+                    <button class="btn-toggle"><i class="fa fa-reorder"></i></button>
+                    <nav class="nav">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            
+                            <li><a href="contacts.html">contacts</a></li>
+                            <li><a href="javascript:void(0)" ng-show="page == 'login'" ng-click="redirectToLogin()">login/register</a></li>
+                            <li><a href="/profile" ng-show="page == 'user'">{{showUser}}</a></li>
+                            <li><a href="javascript:void(0)" ng-show="page == 'user'" ng-click="logout()">logout</a></li>
+                            <li><a id="search-toggle" class="nav_slide_button color-white" href="#"><span></span></a></li>
+                            <li class="cart-dropdown"><a class="padd-0" href="#"><i class="fa fa-shopping-cart"></i> 8</a>
+                                <div class="dropdown-content">
+                                    <div class="item-box">
+                                        <div class="image-info">
+                                            <img class="img-thumbnail" src="../content/home/images/shop/1.jpg">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2><a href="#">Photo camera</a></h2>
+                                            <span>$ 400</span>
+                                        </div>
+                                        <div class="cart-delete">
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="image-info">
+                                            <img class="img-thumbnail" src="../content/home/images/shop/2.jpg">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2><a href="#">Headphone</a></h2>
+                                            <span>$ 200</span>
+                                        </div>
+                                        <div class="cart-delete">
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="item-box">
+                                        <div class="image-info">
+                                            <img class="img-thumbnail" src="../content/home/images/shop/3.jpg">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2><a href="#">Washing Machine</a></h2>
+                                            <span>$ 355</span>
+                                        </div>
+                                        <div class="cart-delete">
+                                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <p>SubTotal: $955</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="btn cart-btn blue">View Cart</a>
+                                        <a href="#" class="btn cart-btn border">Check Out</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Main bar end -->
+        </header>
+        <!-- header End -->
+        <!-- Breadcrumbs start -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-overlay"></div>
+            <div class="page-title">
+                <h2>My Blog</h2>
+                <p>Work is easy when you have all tools around you!</p>
+            </div>
+            <ul class="crumb">
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="/"><i class="fa fa-angle-double-right"></i> Home</a></li>
+                <li><a href="/newpost"><i class="fa fa-angle-double-right"></i>New Blog Post</a></li>
+            </ul>
+        </div>
+        <!-- Breadcrumbs end -->
+        <div ui-view></div>
+        <!-- footer start -->
+        <footer>
+            <div class="content-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget widget">
+                                <img src="../content/home/images/logo-light.png" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.</p>
+                                <ul class="contact">
+                                    <li>
+                                        <i class="fa fa-map-marker"></i> 1234 Street Name, United States
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone"></i> (526) 236-895-4782
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope-o"></i> mail@example.com
+                                    </li>
+                                </ul>
+                                <div class="social-media">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-rss"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget widget">
+                                <h4>Popular Tags</h4>
+                                <div class="tagcloud">
+                                    <a href="#">Design</a>
+                                    <a href="#">Tips</a>
+                                    <a href="#">Interior</a>
+                                    <a href="#">Doors</a>
+                                    <a href="#">Audio</a>
+                                </div>
+                                <h4>Gallery</h4>
+                                <div class="footer-gallery">
+                                    <img src="../content/home/images/blog/thumbs50x50/1.jpg" alt="">
+                                    <img src="../content/home/images/blog/thumbs50x50/2.jpg" alt="">
+                                    <img src="../content/home/images/blog/thumbs50x50/3.jpg" alt="">
+                                    <img src="../content/home/images/blog/thumbs50x50/4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget widget">
+                                <h4>Recent Posts</h4>
+                                <ul class="recent-post">
+                                    <li>
+                                        <a class="thumb" href="blog-post.html"><img src="../content/home/images/blog/thumbs60x60/2.jpg" alt=""></a>
+                                        <div class="right-post">
+                                            <a href="blog-post.html">Nullam Massa Turpis...</a>
+                                            <p><i class="fa fa-clock-o"></i> Oct 3,2016</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="thumb" href="blog-post.html"><img src="../content/home/images/blog/thumbs60x60/3.jpg" alt=""></a>
+                                        <div class="right-post">
+                                            <a href="blog-post.html">Malesuada Lacinia...</a>
+                                            <p><i class="fa fa-clock-o"></i> Aug 3,2016</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="thumb" href="blog-post.html"><img src="../content/home/images/blog/thumbs60x60/1.jpg" alt=""></a>
+                                        <div class="right-post">
+                                            <a href="blog-post.html">Quis Dictum Nulla...</a>
+                                            <p><i class="fa fa-clock-o"></i> Dec 3,2016</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn-readmore">Read More <i class="fa fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footer-widget widget">
+                                <h4>Send Us Message</h4>
+                                <form action="#" method="post" class="footer-form" id="" novalidate="">
+                                    <input id="name" name="name" type="text" value="" placeholder="name *">
+                                    <input id="email" name="email" type="email" value="" placeholder="email *">
+                                    <textarea id="comment" name="comment" placeholder="Message *"></textarea>
+                                    <a href="#" class="btn login-btn">Send Us</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="back-top"><a href="#" id="to-top">BACK TO TOP <i class="fa fa-angle-up"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End: footer -->
+    </div>
+    <!-- Jquery js -->
+    <script src="../scripts/angular.js"></script>
+    <script src="../scripts/angular-animate.js"></script>
+    <script src="../scripts/angular-resource.js"></script>
+    <script src="../scripts/angular-route.min.js"></script>
+    <script src="../scripts/angular-ui-router.min.js"></script>
+    <script src="../scripts/loading-bar.js"></script>
+    <script src="../scripts/custom.js"></script>
+
+
+    <script type="text/javascript" src="../content/home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../content/home/js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="../content/home/js/jquery.isotope.min.js"></script>
+    <!-- carousel slider js -->
+    <script type="text/javascript" src="../content/home/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../content/home/js/classie.js"></script>
+    <!-- progress bar js -->
+    <script type="text/javascript" src="../content/home/js/pro-bars.js"></script>
+    <!-- accordion js -->
+    <script type="text/javascript" src="../content/home/js/smk-accordion.js"></script>
+    <!-- Template core js -->
+    <script type="text/javascript" src="../content/home/js/custom-about.js"></script>
+    <!-- Header fixed js -->
+    <script type="text/javascript" src="../content/home/js/header-fixed.js"></script>
+</body>
+
+
+<!-- Mirrored from best100news.com/baakotheme/shortcodes-timeline.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2017 00:45:18 GMT -->
+
+</html>
